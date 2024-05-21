@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="intro">Be Healthy\n Be Happy</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="bmi">BMI</string>
+    <string name="bmi_result">BMI Result</string>
+
+</resources>
