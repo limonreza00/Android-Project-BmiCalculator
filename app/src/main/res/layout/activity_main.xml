@@ -145,6 +145,7 @@
                     android:textSize="20sp" />
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weightEditText"
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
@@ -198,7 +199,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/feetLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
@@ -224,6 +224,7 @@
                     android:visibility="gone" />
 
                 <LinearLayout
+                    android:id="@+id/feetLayout"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -307,6 +308,7 @@
         android:layout_marginTop="10dp"
         android:elevation="5dp">
         <TextView
+            android:id="@+id/resultTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="This is result"
@@ -335,6 +337,7 @@
         android:background="@drawable/bottom_random_circle"
         android:layout_marginBottom="25dp">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/calculateButton"
             android:layout_width="80dp"
             android:layout_height="90dp"
             android:text="BMI"
