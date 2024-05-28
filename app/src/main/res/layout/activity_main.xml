@@ -10,9 +10,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/introCard"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="150dp"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="10dp"
         app:cardCornerRadius="15dp"
@@ -59,9 +58,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/inputCard"
-        android:layout_width="0dp"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="15dp"
         app:cardCornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Gender : "
+                    android:text="@string/gender"
                     android:textSize="20sp" />
 
                 <RadioGroup
@@ -141,7 +139,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Weight : "
+                    android:text="@string/weight"
                     android:textSize="20sp" />
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -151,7 +149,7 @@
                     android:layout_marginVertical="10dp"
                     android:background="@drawable/edit_text_bg"
                     android:inputType="number"
-                    android:hint="Kg or lbs"
+                    android:hint="@string/kg_or_lbs"
                     android:padding="10dp"/>
 
                 <RadioGroup
@@ -173,7 +171,7 @@
                         android:checked="true"
                         android:gravity="center"
                         android:paddingEnd="5dp"
-                        android:text="Kg"
+                        android:text="@string/kg"
                         android:textColor="@drawable/gender_text_selector"
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry" />
@@ -189,7 +187,7 @@
                         android:drawablePadding="2dp"
                         android:gravity="center"
                         android:paddingEnd="5dp"
-                        android:text="lbs"
+                        android:text="@string/lbs"
                         android:textColor="@drawable/gender_text_selector"
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry" />
@@ -209,7 +207,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:text="Height : "
+                    android:text="@string/height"
                     android:textSize="20sp" />
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -218,7 +216,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginVertical="10dp"
                     android:background="@drawable/edit_text_bg"
-                    android:hint="Centimeter"
+                    android:hint="@string/centimeter"
                     android:inputType="number"
                     android:padding="10dp"
                     android:visibility="gone" />
@@ -232,20 +230,20 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/heightFeetEdit"
                         android:layout_width="150dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="50dp"
                         android:layout_marginVertical="10dp"
                         android:background="@drawable/edit_text_bg"
-                        android:hint="Feet"
+                        android:hint="@string/feet"
                         android:inputType="number"
                         android:padding="10dp" />
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/heightInchEdit"
                         android:layout_width="150dp"
-                        android:layout_height="match_parent"
+                        android:layout_height="50dp"
                         android:layout_marginVertical="10dp"
                         android:background="@drawable/edit_text_bg"
-                        android:hint="Inch"
+                        android:hint="@string/inch"
                         android:inputType="number"
                         android:padding="10dp" />
                 </LinearLayout>
@@ -269,7 +267,7 @@
                         android:checked="true"
                         android:gravity="center"
                         android:paddingEnd="5dp"
-                        android:text="Feet"
+                        android:text="@string/feet"
                         android:textColor="@drawable/gender_text_selector"
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry" />
@@ -285,7 +283,7 @@
                         android:drawablePadding="2dp"
                         android:gravity="center"
                         android:paddingEnd="5dp"
-                        android:text="Cm"
+                        android:text="@string/cm"
                         android:textColor="@drawable/gender_text_selector"
                         android:textSize="20sp"
                         tools:ignore="RtlSymmetry" />
@@ -299,19 +297,17 @@
     </androidx.cardview.widget.CardView>
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
+        android:layout_width="290dp"
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/inputCard"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:elevation="5dp">
         <TextView
             android:id="@+id/resultTextView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="This is result"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -340,7 +336,7 @@
             android:id="@+id/calculateButton"
             android:layout_width="80dp"
             android:layout_height="90dp"
-            android:text="BMI"
+            android:text="@string/bmi"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

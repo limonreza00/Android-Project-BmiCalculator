@@ -5,5 +5,15 @@
     <string name="female">Female</string>
     <string name="bmi">BMI</string>
     <string name="bmi_result">BMI Result</string>
+    <string name="gender">Gender :</string>
+    <string name="weight">Weight :</string>
+    <string name="kg_or_lbs">Kg or lbs</string>
+    <string name="kg">Kg</string>
+    <string name="lbs">lbs</string>
+    <string name="height">Height :</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="feet">Feet</string>
+    <string name="inch">Inch</string>
+    <string name="cm">Cm</string>
 
 </resources>
